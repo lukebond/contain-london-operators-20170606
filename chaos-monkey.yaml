@@ -1,8 +1,0 @@
-apiVersion: control-plane.io/v1
-kind: HatefulSet
-metadata:
-  name: chaos-monkey
-  namespace: default
-spec:
-  chaosLevel: 10
-  interval: 300
