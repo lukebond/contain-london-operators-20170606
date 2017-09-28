@@ -1,0 +1,6 @@
+kubectl create -f hatefulset-crd.yaml
+kubectl get customresourcedefinitions
+kubectl create -f chaos-monkey.yaml
+kubectl get hatefulsets
+kubectl delete customresourcedefinition hatefulsets.control-plane.io
+kubectl delete hatefulsets --all
